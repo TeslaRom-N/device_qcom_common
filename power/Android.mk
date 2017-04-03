@@ -51,6 +51,7 @@ endif
 
 ifeq ($(call is-board-platform-in-list,msm8953), true)
 LOCAL_SRC_FILES += power-8953.c
+LOCAL_CFLAGS += -DMPCTLV3
 endif
 
 ifeq ($(call is-board-platform-in-list,msm8937), true)
